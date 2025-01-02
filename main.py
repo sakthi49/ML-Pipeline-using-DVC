@@ -1,3 +1,13 @@
-from src.demo import Sakthi
-obj=Sakthi()
-obj.print_details()
+import os
+os.system("python src/data_ingestion.py")
+print("Data Ingestion run")
+os.system("python src/data_preprocessing.py")
+print("Data Preprocessing run")
+os.system("python src/feature_engineering.py")
+print("Feature Engineering Run")
+
+os.system("python src/model_building.py")
+print("Model Building Run")
+
+os.system("python src/model_evaluation.py")
+print("Model Evaluation Run")
