@@ -2,6 +2,7 @@ stages:
   data_ingestion:
     cmd: python src/data_ingestion.py
     deps:
+      - https://raw.githubusercontent.com/entbappy/Branching-tutorial/refs/heads/master/tweet_emotions.csv
       - src/data_ingestion.py
     outs:
       - data/raw

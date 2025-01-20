@@ -1,0 +1,20 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/data_ingestion.py
+    deps:
+    - path: 
+        https://raw.githubusercontent.com/entbappy/Branching-tutorial/refs/heads/master/tweet_emotions.csv
+      hash: md5
+      checksum: '"d35b09f0074effe9d0ff9e11c50701cbf608e141ea442ce57a366bf4eb3368d3"'
+      size: 3768210
+    - path: src/data_ingestion.py
+      hash: md5
+      md5: b7eae6638b8c59b8f0ec98a859a93ef9
+      size: 2161
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: fb326d2eec197669f9638afde28356bf.dir
+      size: 827973
+      nfiles: 2
