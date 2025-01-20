@@ -4,6 +4,8 @@ xgboost
 nltk
 pandas
 numpy
+requests
+from_root
 dvc
 PyYAML
 -e .
